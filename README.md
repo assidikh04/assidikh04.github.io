@@ -1,1 +1,3 @@
-# assidikh04.github.io
+# Portfolio Seydina Kane
+
+Portfolio étudiant BUT GEII.
