@@ -2,85 +2,150 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Seydina Aboubacry Kane - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Seydina Kane - Portfolio 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-modern.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="logo">S. A. KANE</div>
-    <nav>
-      <a href="index.html" class="active">Accueil</a>
-      <a href="competences.html">Compétences</a>
-      <a href="projets.html">Projets</a>
-      <a href="experience.html">Expérience</a>
-      <a href="cv-seydina-kane.pdf" download class="btn-download">CV PDF</a>
+  <!-- Particules BG -->
+  <canvas id="particles"></canvas>
 
-    </nav>
-  </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">S<span class="neon">.</span>A<span class="neon">.</span>KANE</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <p class="tag">Étudiant BUT GEII · Apprenti CEA-Leti</p>
-        <h1>Concevoir les systèmes électroniques de demain.</h1>
-        <p class="hero-sub">
-          Electrical Engineering Student (3ᵉ année), spécialisé en électronique, systèmes embarqués 
-          et microélectronique, actuellement en apprentissage au CEA-Leti à Grenoble.
-        </p>
-        <div class="hero-actions">
-          <a href="competences.html" class="btn primary">Mes compétences</a>
-          <a href="projets.html" class="btn ghost">Mes projets</a>
+  <!-- Hero Section -->
+  <section id="home" class="hero parallax">
+    <div class="hero-content">
+      <h1 class="hero-title animate-slide">SEYDINA <span class="gradient-text">KANE</span></h1>
+      <p class="hero-subtitle animate-slide delay-1">BUT GEII 3ᵉ année | CEA-Leti | Microélectronique</p>
+      <div class="hero-buttons animate-slide delay-2">
+        <a href="#projects" class="btn btn-primary">Voir Projets</a>
+        <a href="#contact" class="btn btn-secondary">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section parallax">
+    <div class="container">
+      <h2 class="section-title animate-fade">À propos</h2>
+      <div class="about-grid">
+        <div class="about-text animate-slide-right">
+          <p>Étudiant en <strong>BUT GEII 3ᵉ année</strong> spécialisé microélectronique et systèmes embarqués.</p>
+          <p><strong>Apprenti CEA-Leti</strong> : wire bonding, packaging microbatteries, caractérisation électrique.</p>
+          <p>Recherche <strong>alternance école d'ingénieur</strong> (Grenoble INP-Phelma, Polytech Grenoble).</p>
         </div>
-        <div class="hero-meta">
-          <span>CEA-Leti</span>
-          <span>UGA · BUT GEII</span>
-          <span>Grenoble, France</span>
+        <div class="about-stats animate-slide-left">
+          <div class="stat-item">
+            <span class="stat-number neon">3ᵉ</span>
+            <span>année BUT GEII</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number neon">CEA-Leti</span>
+            <span>Apprentissage</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number neon">6+</span>
+            <span>projets</span>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="stats">
-      <div class="stat">
-        <div class="stat-number">3ᵉ</div>
-        <p>année BUT GEII</p>
+  <!-- Skills -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title animate-fade">Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill-card animate-scale">
+          <h3>Électronique</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 90%"></div>
+          </div>
+          <span>90%</span>
+        </div>
+        <div class="skill-card animate-scale">
+          <h3>Python</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 85%"></div>
+          </div>
+          <span>85%</span>
+        </div>
+        <div class="skill-card animate-scale">
+          <h3>Microélectronique</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 80%"></div>
+          </div>
+          <span>80%</span>
+        </div>
       </div>
-      <div class="stat">
-        <div class="stat-number">CEA-Leti</div>
-        <p>Apprentissage</p>
-      </div>
-      <div class="stat">
-        <div class="stat-number">6+</div>
-        <p>projets techniques</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="latest-projects">
-      <h2>Derniers projets</h2>
-      <div class="grid card-grid">
-        <article class="card">
-          <h3>Transistor NMOS microfabriqué</h3>
-          <p class="card-tag">Salaire blanche · SILVACO · Caractérisation</p>
-          <p>Simulation, fabrication et caractérisation complète en salle blanche au CIME Nanotech.</p>
-          <a href="projets.html#nmos" class="card-link">Voir le projet</a>
-        </article>
-        <article class="card">
-          <h3>Antenne RF 2.5 GHz</h3>
-          <p class="card-tag">Caractérisation RF · Analyseur VNA</p>
-          <p>Conception, layout et mesures des paramètres S11/S21 avec validation des performances.</p>
-          <a href="projets.html#antenne" class="card-link">Voir le projet</a>
-        </article>
-        <article class="card">
-          <h3>Étuve régulée PID 37°C</h3>
-          <p class="card-tag">Régulation · Instrumentation</p>
-          <p>Conception d'une étuve avec stabilisation thermique précise (48 min de montée).</p>
-          <a href="projets.html#etuve" class="card-link">Voir le projet</a>
-        </article>
+  <!-- Projects -->
+  <section id="projects" class="section projects-section parallax">
+    <div class="container">
+      <h2 class="section-title animate-fade">Projets</h2>
+      <div class="projects-grid">
+        <div class="project-card animate-slide-up">
+          <div class="project-image" style="background: linear-gradient(45deg, #667eea, #764ba2)">
+            <h4>Transistor NMOS</h4>
+          </div>
+          <div class="project-info">
+            <h3>Microfabrication salle blanche</h3>
+            <p>SILVACO Athena, photolithographie, implantation ionique.</p>
+          </div>
+        </div>
+        <div class="project-card animate-slide-up delay-1">
+          <div class="project-image" style="background: linear-gradient(45deg, #f093fb, #f5576c)">
+            <h4>Antenne RF</h4>
+          </div>
+          <div class="project-info">
+            <h3>Caractérisation 2.5GHz</h3>
+            <p>Analyseur VNA, paramètres S11/S21.</p>
+          </div>
+        </div>
+        <div class="project-card animate-slide-up delay-2">
+          <div class="project-image" style="background: linear-gradient(45deg, #4facfe, #00f2fe)">
+            <h4>Étuve PID</h4>
+          </div>
+          <div class="project-info">
+            <h3>Régulation 37°C</h3>
+            <p>Stabilisation thermique 48min.</p>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <p>© 2026 · S. Aboubacry Kane · Portfolio BUT GEII & CEA-Leti</p>
-  </footer>
+  <!-- Contact -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title animate-fade">Contact</h2>
+      <div class="contact-content">
+        <p>Alternance école d'ingénieur · Électronique embarquée · Microélectronique</p>
+        <div class="contact-info">
+          <p><strong>📞</strong> 07 53 04 37 56</p>
+          <p><strong>✉️</strong> kaneaboubacry903@gmail.com</p>
+          <p><strong>📍</strong> Grenoble, France</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
+<!-- CDN GSAP + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
 </html>
